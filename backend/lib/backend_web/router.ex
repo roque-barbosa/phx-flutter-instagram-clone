@@ -8,6 +8,8 @@ defmodule BackendWeb.Router do
   scope "/api" do
     pipe_through :api
 
+    get "/", BackendWeb.PostController, :index
+
     forward "/graphql", Absinthe.Plug, schema: BackendWeb.Schema
 
 
