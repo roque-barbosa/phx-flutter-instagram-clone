@@ -46,7 +46,8 @@ defmodule Backend.MixProject do
       {:plug_cowboy, "~> 2.5"},
       {:absinthe, "~> 1.5"},
       {:absinthe_plug, "~> 1.5"},
-      {:faker, "~> 0.17.0", only: [:dev, :test]}
+      {:faker, "~> 0.17.0", only: [:dev, :test]},
+      {:corsica, "~> 1.1.3"}
     ]
   end
 

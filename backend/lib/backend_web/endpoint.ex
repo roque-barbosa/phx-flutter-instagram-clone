@@ -45,4 +45,6 @@ defmodule BackendWeb.Endpoint do
   plug Plug.Head
   plug Plug.Session, @session_options
   plug BackendWeb.Router
+  plug Corsica,
+    origins: "*"
 end
